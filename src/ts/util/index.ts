@@ -131,3 +131,6 @@ export {
   getLastElement,
   safePropertyAccess
 }
+// src/ts/index.ts
+
+console.log("✅ AdminLTE 사이트가 정상적으로 실행되었습니다!");
