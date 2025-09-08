@@ -133,4 +133,23 @@ export {
 }
 // src/ts/index.ts
 
-console.log("✅ AdminLTE 사이트가 정상적으로 실행되었습니다!");
+// --- 기존 코드들 ---
+
+// 콘솔 메시지
+(() => {
+  console.log("✅ AdminLTE 사이트가 정상적으로 실1행되었습니다!");
+})();
+
+// AdminLTE 메뉴 첫 번째 항목 스타일 변경
+onDOMContentLoaded(() => {
+  // AdminLTE 기본 사이드바 메뉴 클래스 기준
+  const firstMenuItem = document.querySelector('.nav-sidebar .nav-item') as HTMLElement;
+
+  if (firstMenuItem) {
+    firstMenuItem.style.color = 'white';            // 글자색
+    firstMenuItem.style.backgroundColor = 'red';   // 배경색
+    firstMenuItem.style.fontSize = '18px';         // 글자 크기
+    firstMenuItem.style.fontWeight = 'bold';       // 글자 굵기
+    firstMenuItem.style.padding = '8px';           // 여백
+  }
+});
